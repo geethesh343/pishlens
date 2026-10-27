@@ -1,0 +1,16 @@
+[
+  "phishlens/tests/test_api.py::test_health_endpoint",
+  "phishlens/tests/test_api.py::test_predict_empty_url",
+  "phishlens/tests/test_api.py::test_predict_endpoint_valid_url",
+  "phishlens/tests/test_api.py::test_predict_rejects_missing_protocol",
+  "phishlens/tests/test_api.py::test_stats_endpoint",
+  "phishlens/tests/test_features.py::test_empty_url_raises_error",
+  "phishlens/tests/test_features.py::test_encoded_characters",
+  "phishlens/tests/test_features.py::test_extract_features_at_symbol",
+  "phishlens/tests/test_features.py::test_extract_features_ip_address",
+  "phishlens/tests/test_features.py::test_extract_features_valid_https",
+  "phishlens/tests/test_features.py::test_shannon_entropy",
+  "phishlens/tests/test_features.py::test_unusual_port",
+  "phishlens/tests/test_model.py::test_extreme_obfuscation_features",
+  "phishlens/tests/test_model.py::test_feature_vector_completeness"
+]

@@ -1,0 +1,6 @@
+{
+  "name": "PhishLens Presentation & Defense Guide",
+  "description": "Complete presentation walkthrough, faculty speech script, interactive URL feature extraction lab, and viva voce defense simulator for PhishLens Malicious URL Detector.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,54 @@
+{
+  "model_type": "Random Forest Classifier (Ensemble)",
+  "baseline_model": "Logistic Regression",
+  "dataset_samples": 572,
+  "test_samples": 115,
+  "classification_threshold": 0.48,
+  "feature_names": [
+    "url_length",
+    "hostname_length",
+    "dot_count",
+    "hyphen_count",
+    "digit_count",
+    "has_at_symbol",
+    "subdomain_count",
+    "is_ip_address",
+    "is_https",
+    "path_length",
+    "query_param_count",
+    "suspicious_token_count",
+    "character_entropy",
+    "has_unusual_port",
+    "has_encoded_chars"
+  ],
+  "metrics": {
+    "random_forest": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "pr_auc": 1.0,
+      "false_positive_rate": 0.0,
+      "confusion_matrix": {
+        "true_positives": 63,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 52
+      }
+    },
+    "logistic_regression": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "pr_auc": 1.0,
+      "false_positive_rate": 0.0,
+      "confusion_matrix": {
+        "true_positives": 63,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 52
+      }
+    }
+  }
+}

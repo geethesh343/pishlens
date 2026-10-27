@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}PhishLens — Malicious URL Detector{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="brand">
+        <span class="brand-shield">🛡️</span>
+        <span class="brand-name">PhishLens</span>
+      </a>
+      <div class="nav-links">
+        <a href="/">URL Scanner</a>
+        <a href="/#dashboard">Dashboard</a>
+        <a href="/about">About</a>
+        <a href="/documentation">Documentation</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2026 PhishLens — AI-Powered Malicious URL Detection System. Open Source.</p>
+      <p class="disclaimer">Machine learning predictions provide probabilistic risk estimation, not absolute safety guarantees.</p>
+    </div>
+  </footer>
+
+  {% block scripts %}{% endblock %}
+</body>
+</html>

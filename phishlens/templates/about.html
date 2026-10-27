@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}About — PhishLens{% endblock %}
+
+{% block content %}
+<div class="content-container">
+  <h1>About PhishLens</h1>
+  <p class="lead">
+    PhishLens is a modern, AI-powered malicious URL detection engine built to proactively safeguard internet users from credential-harvesting cyberattacks.
+  </p>
+
+  <div class="card doc-card">
+    <h2>The Problem with Traditional Blacklists</h2>
+    <p>
+      Traditional cybersecurity filters rely on centralized blacklists of previously reported domain names. However, over 60% of modern phishing domains stay active for less than 24 hours. Attackers register algorithmic domain variations, harvest credentials, and abandon the domain before security vendors can inspect or blacklist it.
+    </p>
+    <p>
+      PhishLens bridges this security window by examining the inherent anatomical properties of the link—such as subdomain depth, symbol ratios, and Shannon character entropy—using machine learning to detect zero-day threats without relying solely on prior reports.
+    </p>
+  </div>
+
+  <div class="card doc-card">
+    <h2>The Machine Learning Pipeline</h2>
+    <ol class="pipeline-steps">
+      <li><strong>1. Safe Input Ingestion:</strong> The URL string is parsed syntactically without opening or executing the target destination.</li>
+      <li><strong>2. Feature Decomposition:</strong> 15 distinct lexical, structural, and information-theoretic features are calculated.</li>
+      <li><strong>3. Random Forest Classification:</strong> An ensemble of decision trees computes prediction probability against learned threat profiles.</li>
+      <li><strong>4. Explainable Verdict:</strong> A risk score from 0 to 100 is presented alongside plain-language justifications for transparency.</li>
+    </ol>
+  </div>
+
+  <div class="card doc-card">
+    <h2>Privacy & Ethical Standards</h2>
+    <p>
+      PhishLens enforces strict privacy safeguards: sensitive URL parameters containing tokens or passwords are redacted, scan history is kept non-persistent in session memory, and target links are never executed server-side to eliminate SSRF risks.
+    </p>
+  </div>
+</div>
+{% endblock %}
